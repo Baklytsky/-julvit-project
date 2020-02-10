@@ -1,0 +1,180 @@
+@import "mixins";
+@import "variables";
+.indent {
+  padding: 0;
+  margin: 0;
+}
+
+/*--------------------------------------------------------------------------------------------------------
+---------------------------------------------HEADER---------------------------------------------------------
+----------------------------------------------------------------------------------------------------------*/
+#header {
+  background-color: $black;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  .header-contacts {
+    button {
+      font-size: $small;
+      color: $yellowgreen;
+      background-color: transparent;
+      border: 2px solid $yellowgreen;
+      border-radius: 20px;
+      padding: 10px 20px;
+      transform: scale(0.9);
+      transition: all .3s linear;
+      &:hover {
+        transform: scale(1);
+      }
+    }
+    address {
+      width: 100%;
+      .address-list {
+        p {
+          font-size: $small;
+        }
+        &:before {
+          content: "";
+          width: 30px;
+          height: 30px;
+          display: block;
+          background-image: url("../img/adress.png");
+          background-repeat: no-repeat;
+        }
+      }
+      .phone-list {
+        &:before {
+          content: "";
+          width: 30px;
+          height: 30px;
+          display: block;
+          background-image: url("../img/phone.png");
+          background-repeat: no-repeat;
+        }
+      }
+      a {
+        font-size: $small;
+        color: $gray;
+        transition: all .3s linear;
+        &:hover {
+          color: $greenyellow;
+        }
+      }
+    }
+  }
+  nav {
+    border-top: 1px solid $gray;
+    border-bottom: 1px solid $gray;
+    padding: 15px 0;
+    button {
+      border: none;
+      outline: none;
+    }
+    .navbar-nav {
+      width: 100%;
+    }
+    .icon-hamburger {
+      font-size: $big;
+    }
+    li {
+      padding: 5px 0;
+      a {
+        color: $gray;
+        transition: all .3s linear;
+        &:hover {
+          color: $yellowgreen;
+        }
+      }
+      .active-nav {
+        color: $yellowgreen;
+      }
+    }
+  }
+}
+/*--------------------------------------------------------------------------------------------------------
+---------------------------------------------SLOGAN-SECTION-------------------------------------------------
+----------------------------------------------------------------------------------------------------------*/
+.slogan-section {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/tree.jpg") no-repeat center / cover;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  .slogan-title {
+    position: relative;
+    top: 57%;
+    h2 {
+      font-size: $big2;
+      font-weight: 700;
+      color: $white;
+      text-shadow: 1px 5px 0 $green;
+    }
+  }
+}
+/*--------------------------------------------------------------------------------------------------------
+---------------------------------------------FOOTER-------------------------------------------------
+----------------------------------------------------------------------------------------------------------*/
+#footer {
+  padding: 20px 0;
+  background-color: $black;
+  opacity: 0.8;
+  .footer-item {
+    border-top: 1px solid $gray;
+    border-bottom: 1px solid $gray;
+  }
+  .icon-style {
+    color: $white;
+  }
+  h3, p {
+    font-size: $small;
+    color: $white;
+  }
+  .address-list {
+    &:before {
+      content: "";
+      width: 30px;
+      height: 30px;
+      display: block;
+      background-image: url("../img/adress.png");
+      background-repeat: no-repeat;
+    }
+  }
+  .phone-list {
+    &:before {
+      content: "";
+      width: 30px;
+      height: 30px;
+      display: block;
+      background-image: url("../img/phone.png");
+      background-repeat: no-repeat;
+    }
+  }
+  a {
+    font-size: $small;
+    color: $white;
+    transition: all .3s linear;
+
+    &:hover {
+      color: $greenyellow;
+    }
+  }
+  address {
+    &:after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 5px;
+      background-color: $green;
+      margin: 20px 0;
+    }
+  }
+  .dev-title {
+    font-size: $smaller2;
+    color: $gray;
+  }
+}

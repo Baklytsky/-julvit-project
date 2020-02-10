@@ -1,0 +1,22 @@
+@import "mixins";
+@import "variables";
+
+@media (min-width: 768px) {
+  .slogan-section {
+    .slogan-title {
+      position: relative;
+      top: 50%;
+      h2 {
+        font-size: $bigger;
+      }
+    }
+  }
+  #footer {
+    .footer-item {
+      border-top: none;
+      border-bottom: none;
+      border-right: 1px solid $gray;
+      border-left: 1px solid $gray;
+    }
+  }
+}

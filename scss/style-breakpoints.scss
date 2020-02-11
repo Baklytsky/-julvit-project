@@ -3,12 +3,8 @@
 
 @media (min-width: 768px) {
   .slogan-section {
-    .slogan-title {
-      position: relative;
-      top: 50%;
-      h2 {
+    .slogan-title h2 {
         font-size: $bigger;
-      }
     }
   }
   #footer {
@@ -17,6 +13,14 @@
       border-bottom: none;
       border-right: 1px solid $gray;
       border-left: 1px solid $gray;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  #header {
+    nav li a {
+      font-size: $normal;
     }
   }
 }

@@ -17,18 +17,8 @@
   left: 0;
   z-index: 1;
   .header-contacts {
-    button {
-      font-size: $small;
-      color: $yellowgreen;
-      background-color: transparent;
-      border: 2px solid $yellowgreen;
-      border-radius: 20px;
-      padding: 10px 20px;
-      transform: scale(0.9);
-      transition: all .3s linear;
-      &:hover {
-        transform: scale(1);
-      }
+    img {
+      width: 60px;
     }
     address {
       width: 100%;
@@ -37,22 +27,14 @@
           font-size: $small;
         }
         &:before {
-          content: "";
-          width: 30px;
-          height: 30px;
-          display: block;
+          @include contacts-icons;
           background-image: url("../img/adress.png");
-          background-repeat: no-repeat;
         }
       }
       .phone-list {
         &:before {
-          content: "";
-          width: 30px;
-          height: 30px;
-          display: block;
+          @include contacts-icons;
           background-image: url("../img/phone.png");
-          background-repeat: no-repeat;
         }
       }
       a {
@@ -66,9 +48,11 @@
     }
   }
   nav {
-    border-top: 1px solid $gray;
-    border-bottom: 1px solid $gray;
     padding: 15px 0;
+    img {
+      width: 60px;
+      margin-right: 20px;
+    }
     button {
       border: none;
       outline: none;
@@ -82,6 +66,7 @@
     li {
       padding: 5px 0;
       a {
+        font-size: $small;
         color: $gray;
         transition: all .3s linear;
         &:hover {
@@ -107,12 +92,28 @@
   right: 0;
   .slogan-title {
     position: relative;
-    top: 57%;
+    top: 40%;
     h2 {
-      font-size: $big2;
+      font-size: $big;
       font-weight: 700;
       color: $white;
       text-shadow: 1px 5px 0 $green;
+    }
+    button {
+      font-size: $small;
+      font-weight: 700;
+      color: $white;
+      text-shadow: 0 1px 0 $green;
+      background-color: $blue;
+      border: 3px solid $blue;
+      border-radius: 40px;
+      padding: 10px 20px;
+      margin-top: 5%;
+      transition: all .3s linear;
+      &:hover {
+        background-color: darken($blue, 10%);
+        border: 3px solid $white;
+      }
     }
   }
 }
@@ -130,28 +131,33 @@
   .icon-style {
     color: $white;
   }
+  .social-icon {
+    color: $white;
+    border: 1px solid $white;
+    padding: 10px 10px 5px 10px;
+    border-radius: 50%;
+    transition: all .3s linear;
+    transform: rotate(0);
+    &:hover {
+      color: $yellowgreen;
+      border: 1px solid $yellowgreen;
+      transform: rotate(360deg);
+    }
+  }
   h3, p {
     font-size: $small;
     color: $white;
   }
   .address-list {
     &:before {
-      content: "";
-      width: 30px;
-      height: 30px;
-      display: block;
+      @include contacts-icons;
       background-image: url("../img/adress.png");
-      background-repeat: no-repeat;
     }
   }
   .phone-list {
     &:before {
-      content: "";
-      width: 30px;
-      height: 30px;
-      display: block;
+      @include contacts-icons;
       background-image: url("../img/phone.png");
-      background-repeat: no-repeat;
     }
   }
   a {

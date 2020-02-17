@@ -2,6 +2,10 @@
 @import "variables";
 
 @media (min-width: 768px) {
+  #header nav ul {
+    background-color: transparent;
+    opacity: 1;
+  }
   .slogan-section {
     .slogan-title h2 {
         font-size: $bigger;

@@ -10,6 +10,10 @@
     .slogan-title h2 {
         font-size: $bigger;
     }
+    .slogan-title p {
+      font-size: $big2;
+      text-shadow: 1px 3px 1px $black;
+    }
   }
   #footer {
     .footer-item {
@@ -20,7 +24,14 @@
     }
   }
 }
-
+@media (min-width: 992px) {
+  .slogan-section .slogan-title .headline {
+    width: 100%;
+    height: 150px;
+    border-right: 1px solid $white;
+    border-bottom: none;
+  }
+}
 @media (min-width: 1200px) {
   #header {
     nav li a {

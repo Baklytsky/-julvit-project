@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700&display=swap&subset=cyrillic');
 
 html,body                       { width:100%; height:100%; }
-body                            { padding:0; margin:0; font:16px Roboto, Arial, Calibri, arial, Tahoma, sans-serif;  color:#807f6b; }
+body                            { padding:0; margin:0; font:16px Roboto, Arial, Calibri, arial, Tahoma, sans-serif;  color:#ffffff; }
 div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,input,textarea {
     padding:0;
     margin:0;

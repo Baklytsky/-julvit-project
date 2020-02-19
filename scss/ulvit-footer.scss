@@ -1,0 +1,89 @@
+@import "mixins";
+@import "variables";
+.indent {
+  padding: 0;
+  margin: 0;
+}
+/*--------------------------------------------------------------------------------------------------------
+---------------------------------------------FOOTER-------------------------------------------------
+----------------------------------------------------------------------------------------------------------*/
+#footer {
+  padding: 20px 0;
+  background-color: $bg-header;
+  .footer-item {
+    border-top: 1px solid $gray;
+    border-bottom: 1px solid $gray;
+  }
+  .icon-style {
+    font-size: $big;
+  }
+  .facebook, .twitter, .instagram {
+    padding: 10px 10px 5px 10px;
+    border-radius: 50%;
+    transition: all .3s linear;
+  }
+  .facebook {
+    color: $facebook;
+    border: 1px solid $facebook;
+    &:hover {
+      color: $white;
+      border: 1px solid $white;
+      background-color: $facebook;
+    }
+  }
+  .twitter {
+    color: $twitter;
+    border: 1px solid $twitter;
+    &:hover {
+      color: $white;
+      border: 1px solid $white;
+      background-color: $twitter;
+    }
+  }
+  .instagram {
+    color: $instagram;
+    border: 1px solid $instagram;
+    &:hover {
+      color: $white;
+      border: 1px solid $white;
+      background-color: $instagram;
+    }
+  }
+
+  h3, p {
+    font-size: $small;
+  }
+  .address-icon, .phone-icon {
+    font-size: $big;
+    line-height: 0;
+  }
+  .address-icon {
+    color: $youtube;
+  }
+  .phone-icon {
+    color: $blue;
+  }
+  a {
+    font-size: $small;
+    color: $white;
+    transition: all .3s linear;
+
+    &:hover {
+      color: $greenyellow;
+    }
+  }
+  address {
+    &:after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 5px;
+      background-color: $light-green;
+      margin: 20px 0;
+    }
+  }
+  .dev-title {
+    font-size: $smaller2;
+    color: $gray;
+  }
+}

@@ -11,9 +11,10 @@
 #header {
   width: 100%;
   background-color: $bg-header;
+  transition: all .5s linear;
   nav {
     img {
-      width: 60px;
+      width: 100px;
       margin-right: 20px;
     }
     .navbar-nav {

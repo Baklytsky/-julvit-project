@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
-    <title>ТОВ "ЮЛВІТ ГРУП"</title>
+    <title>ТОВ "ЮЛВІТ ГРУП" - новини</title>
 </head>
 <body>
 <header id="header" class="container-fluid indent">
@@ -26,8 +26,8 @@
             </button>
             <div id="navbarCollapse" class="collapse navbar-collapse">
                 <ul class="navbar-nav text-center d-md-flex justify-content-md-between text-uppercase ">
-                    <li class="nav-item active-nav"><a href="index.html" class="active-nav">Головна</a></li>
-                    <li class="nav-item active-nav"><a href="news.html">Новини</a></li>
+                    <li class="nav-item"><a href="index.html">Головна</a></li>
+                    <li class="nav-item active-nav"><a href="news.html" class="active-nav">Новини</a></li>
                     <li class="nav-item"><a href="#">Правила сортування</a></li>
                     <li class="nav-item"><a href="#">Послуги</a></li>
                     <li class="nav-item"><a href="#">ECO-hub</a></li>
@@ -45,55 +45,45 @@
         </div>
     </div>
 </header>
-<section>
-    <div class="section-slider">
-        <div id="carouselControls" class="container-fluid carousel slide indent justify-content-center" data-ride="carousel">
-            <ul class="carousel-indicators indicators-type">
-                <li data-target="#carouselControls" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselControls" data-slide-to="1"></li>
-            </ul>
-                <div class="carousel-inner">
-                    <div class="carousel-item active slogan-section">
-                        <div class="slogan-section slider-bg-one">
-                            <div class="container slogan-title">
-                                <div class="row">
-                                    <div class="col-12 col-lg-6 text-center headline pb-3 text-lg-right">
-                                        <h2> Бережемо довкілля </h2>
-                                    </div>
-                                    <div class="col-12 col-lg-6 text-center pt-3 d-lg-flex align-items-lg-end text-lg-left">
-                                        <p> піклуємося про себе </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item slogan-section">
-                        <div class="slogan-section slider-bg-two">
-                            <div class="container slogan-title">
-                                <div class="row">
-                                    <div class="col-12 col-lg-6 text-center headline pb-3 text-lg-right">
-                                        <h2> Бережемо довкілля </h2>
-                                    </div>
-                                    <div class="col-12 col-lg-6 text-center pt-3 d-lg-flex align-items-lg-end text-lg-left">
-                                        <p> піклуємося про себе </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            <a class="carousel-control-prev control-type" href="#carouselControls" role="button" data-slide="prev">
-                <span class="icon-left-open-big size" aria-hidden="true"></span>
-            </a>
-            <a class="carousel-control-next control-type" href="#carouselControls" role="button" data-slide="next">
-                <span class="icon-right-open-big size" aria-hidden="true"></span>
-            </a>
-        </div>
-    </div>
-</section>
-<section class="ecology-section">
+<section class="news-section">
     <div class="container">
-        <img src="img/map-ceziy-137.jpg" alt="map">
+        <h2 class="page-title text-right text-uppercase">Новини</h2>
+    </div>
+    <div class="container pt-5">
+        <ul>
+            <li class="row pb-3 pt-3">
+                <div class="col-12">
+                    <h3 class="news-title text-center pb-3">Батарейки, здавайтеся!</h3>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="img/IMG_7626.JPG" alt="Фото статті" class="img-fluid card-img">
+                </div>
+                <div class="col-12 col-md-8 d-flex align-items-center text-center text-md-left pt-3 pb-3">
+                    <p>
+                        У нас суперновина! Сьогодні 3.02.20 КП "Київкомунсервіс" підписав угоду з підрядником - ТОВ
+                        "Екологічні інвестиції" на вивезення 70 тонн батарейок на завод GreenWEEE, що знаходиться в
+                        Румунії.
+                        Вже на початку квітня майже 3,5 мільйонів поїдуть на переробку, а не на полігони. Адже батарейки
+                        - це колосальний забруднювач ґрунту.
+                    </p>
+                </div>
+            </li>
+            <li class="row pb-3 pt-3">
+                <div class="col-12">
+                    <h3 class="news-title text-center pb-3">Пакети з картоплі</h3>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="img/chistopes-krahmal-ukraine.jpg" alt="Фото статті" class="img-fluid card-img">
+                </div>
+                <div class="col-12 col-md-8 d-flex align-items-center text-center text-md-left pt-3 pb-3">
+                    <p>
+                        Стандарти Compostable, Biobased, Biodegradable можуть бути надані пакетам, які не на 100%
+                        виготовленні з рослинних та натуральних компонентів, це також можуть бути синтетичні матеріали,
+                        які здатні розкладатися на CO2, воду та біомасу протягом 6 місяців через біологічну активність.
+                    </p>
+                </div>
+            </li>
+        </ul>
     </div>
 </section>
 <footer id="footer" class="container-fluid">

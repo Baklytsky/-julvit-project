@@ -73,6 +73,9 @@
     }
   }
   address {
+    h3, p {
+      color: $white;
+    }
     &:after {
       content: "";
       display: block;

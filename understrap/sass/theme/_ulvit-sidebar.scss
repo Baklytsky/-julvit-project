@@ -1,0 +1,115 @@
+@import "mixins";
+@import "theme_variables";
+
+.sidebar-item {
+	border-bottom: 3px solid $green;
+	border-top: 3px solid $green;
+	border-radius: 10px;
+	margin: 20px 0;
+	padding: 20px 0;
+}
+.widget-title {
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: $big;
+	text-align: center;
+	color: $title;
+	padding-bottom: 5px;
+
+}
+
+.widget_archive ul li, .widget_recent_entries ul li, .widget_pages ul li {
+	display: flex;
+	align-items: center;
+	padding: 10px 0;
+	&:before {
+		content: "\5c";
+		font-family: 'untitled-font-1' , sans-serif;
+		font-size: $big;
+		line-height: 0;
+		color: $green;
+		padding-right: 10px;
+	}
+	a {
+		font-size: $small;
+		font-style: italic;
+		color: $title;
+		transition: all .3s linear;
+		&:hover {
+			color: $green;
+			text-decoration: underline;
+		}
+	}
+}
+
+.widget_tag_cloud .tagcloud {
+	padding: 10px 0;
+	a {
+		font-size: $small !important;
+		font-style: italic;
+		color: $title;
+		border-radius: 5px;
+		display: inline-block;
+		padding: 3px 10px;
+		margin-bottom: 5px;
+		transition: all .3s linear;
+		&:before {
+			content: "#";
+			font-family: 'Helvetica Neue', sans-serif;
+			font-size: $normal;
+			color: $green;
+			padding-right: 5px;
+			transition: all .3s linear;
+		}
+		&:hover {
+			background: $gold-gradient2;
+			color: $green;
+			&:before {
+				color: $white;
+			}
+		}
+	}
+}
+
+.widget_search, .page-content {
+	padding: 20px 0;
+
+	form {
+		.form-control {
+			border-top-left-radius: 19px;
+			border-bottom-left-radius: 19px;
+			padding-left: 30px;
+			background-color: $section-bg;
+			box-shadow: none;
+			&:active, &:focus {
+				border: 1px solid #ced4da;
+			}
+		}
+
+		.submit {
+			font-size: $small;
+			color: $title;
+			border: 1px solid #ced4da;
+			border-top-right-radius: 19px;
+			border-bottom-right-radius: 19px;
+			background: $gold-gradient2;
+			transition: all .3s linear;
+			&:hover {
+				color: $white;
+			}
+		}
+		.btn-primary {
+			outline: none;
+			box-shadow: none;
+			&:active, &:focus {
+				border: 1px solid #ced4da !important;
+				background-color: transparent;
+				outline: 0;
+				box-shadow: none !important;
+			}
+		}
+	}
+}
+.page-header {
+	padding-top: 25px;
+}
+

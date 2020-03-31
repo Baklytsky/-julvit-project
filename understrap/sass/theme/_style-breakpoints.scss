@@ -1,0 +1,170 @@
+@import "mixins";
+@import "theme_variables";
+
+@media (min-width: 650px) {
+  .slogan-section .slogan-title {
+    padding: 30% 0;
+  }
+}
+@media (min-width: 768px) {
+  #header {
+    li a {
+      font-size: $smaller;
+    }
+  }
+  .slogan-section {
+    .slogan-title h2 {
+      font-size: $big2;
+    }
+    .slogan-title p {
+      font-size: $big;
+    }
+  }
+  .about-us {
+    .about-company {
+      h2 {
+        font-size: $big2;
+      }
+    }
+    .about-social {
+      .facebook, .twitter, .instagram {
+        font-size: $big2;
+        &:before {
+          padding: 20px;
+        }
+      }
+    }
+  }
+  .eco-hub .image-block .image-title {
+    font-size: $normal;
+  }
+  #footer {
+    h3, p, a {
+      font-size: $smaller2;
+    }
+  }
+  .single-post .recent-post .recent-post-img {
+    height: 120px;
+    img {
+      height: 100%;
+    }
+  }
+}
+@media (min-width: 992px) {
+  #header {
+    li a {
+      font-size: $small;
+    }
+    .form-button {
+      font-size: $smaller2;
+    }
+  }
+  .slogan-section .slogan-title {
+    width: 90%;
+    padding: 15% 0;
+  }
+  .slogan-section .slogan-title .headline {
+    &:after {
+      content: "";
+      width: 2px;
+      height: 200px;
+      top: 50%;
+      left: 100%;
+      transform: translateY(-50%);
+    }
+  }
+  .section-title {
+    font-size: $big2;
+  }
+  .about-us {
+    .about-contacts {
+      p, a {
+        font-size: $normal;
+      }
+    }
+  }
+  .eco-hub .image-block .image-title {
+    font-size: $big;
+  }
+  .services {
+    .people-btn,  .company-btn {
+      font-size: $normal;
+      padding: 10px 20px;
+    }
+  }
+  #footer {
+    h3, p, a {
+      font-size: $small;
+    }
+  }
+  .nav-links {
+    padding: 30px 0;
+  }
+  .nav-previous, .nav-next {
+    display: block;
+  }
+  .single-post .recent-post {
+    .recent-post-headline {
+      font-size: $big;
+    }
+    .recent-post-title {
+      font-size: $normal;
+    }
+  }
+}
+@media (min-width: 1200px) {
+
+  .slogan-section {
+    .slogan-title h2 {
+      font-size: $bigger;
+    }
+    .slogan-title p {
+      font-size: $big2;
+    }
+  }
+  .single-post-title {
+    font-size: $big2;
+  }
+  .entry-content {
+    h3 {
+      font-size: $normal-plus;
+    }
+    p {
+      font-size: $normal;
+    }
+  }
+  .post-title {
+    font-size: $normal;
+  }
+  .post-text {
+    font-size: $normal;
+  }
+
+  .law-section .law-item .law-title .law-text a {
+    font-size: $normal;
+  }
+  .btn-secondary, .widget_archive ul li a, .widget_recent_entries ul li a,
+  .widget_pages ul li a, .widget_search form .submit, .entry-summary p {
+    font-size: $normal;
+  }
+  .widget_tag_cloud .tagcloud a {
+    font-size: $normal !important;
+  }
+  .eco-hub .image-block .image-title {
+    font-size: $big2;
+  }
+  .eco-hub {
+    .eco-hub-text span {
+        font-size: $big;
+    }
+    .eco-icons-style {
+      font-size: $extra-big;
+      &:before {
+        padding: 40px;
+      }
+    }
+  }
+  .search-none-title {
+    font-size: $big2;
+  }
+}

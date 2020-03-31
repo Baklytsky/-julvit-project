@@ -1,0 +1,114 @@
+@import "mixins";
+@import "theme_variables";
+.indent {
+  padding: 0;
+  margin: 0;
+}
+/*--------------------------------------------------------------------------------------------------------
+---------------------------------------------FOOTER-------------------------------------------------------
+----------------------------------------------------------------------------------------------------------*/
+#footer {
+  padding: 10px 0;
+  background: $gold-gradient2;
+  position: relative;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 5px;
+    background: $gold-gradient;
+  }
+
+  .icon-style {
+    font-size: $big;
+    color: $title;
+  }
+  .facebook, .twitter, .instagram {
+    color: $title;
+    transition: all .3s linear;
+    &:before {
+      padding: 10px;
+      border: 1px solid $title;
+      border-radius: 50%;
+    }
+  }
+  .facebook {
+    &:before {
+      background-color: transparent;
+    }
+
+    &:hover {
+      color: $white;
+      &:before {
+        border: 1px solid $facebook;
+        background-color: $facebook;
+      }
+    }
+  }
+  .twitter {
+    &:before {
+      background-color: transparent;
+    }
+
+    &:hover {
+      color: $white;
+      &:before {
+        border: 1px solid $twitter;
+        background-color: $twitter;
+      }
+    }
+  }
+  .instagram {
+    &:before {
+      background-color: transparent;
+    }
+
+    &:hover {
+      color: $white;
+      &:before {
+        border: 1px solid $instagram;
+        background-color: $instagram;
+      }
+    }
+  }
+
+  h3, p {
+    font-family: SF UI Display, sans-serif;
+    font-size: $small;
+    letter-spacing: 1.2px;
+    color: $title;
+  }
+  .address-list span {
+    line-height: 1.3;
+  }
+  .address-icon, .phone-icon {
+    font-size: $big;
+    line-height: 0;
+  }
+  .address-icon {
+    color: $title;
+  }
+  .phone-icon {
+    color: $title;
+  }
+  a {
+    font-family: SF UI Display, sans-serif;
+    font-size: $small;
+    letter-spacing: 1.2px;
+    color: $title;
+    transition: all .3s linear;
+
+    &:hover {
+      color: $green;
+    }
+  }
+  .dev-title {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    font-size: $smaller2;
+    color: $green;
+  }
+}
